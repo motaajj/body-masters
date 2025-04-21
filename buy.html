@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUBSCRIBE</title>
+    <link rel="icon"  href="/photos/bodylogo.jpeg">
+    <link rel="stylesheet" href="buy.css">
+
+</head>
+<body>
+    <img src="./photos/lo-removebg-preview.png" class="logo">
+
+    <div class="content">
+        <form action="user.html" >
+            <h4>CHECK OUT</h4>
+            <p> payment information</p>
+            <label for="cardholder">Card holder name</label>
+            <input type="text" placeholder="" required maxlength="12" class="cart-holder">
+            <label for="cardholder">Card Number</label>
+            <input type="text" placeholder="" maxlength="16" class="cart-number" required>
+            <label for="cardholder">Bank Name</label>
+            <select name="banks" id="banks" required>
+                <optgroup label="banks">
+                    <option value="-choose-">-choose-</option>
+                    <option value="AL-AHLY">AL-AHLY</option>
+                    <option value="AL-RAJHY">AL-RAJHY</option>
+                    <option value="AL-ENMA">AL-ENMA</option>
+                </optgroup>
+            </select>
+            <div class="last-info">
+                <label for="" >Expiry</label>
+                <input type="text" class="Expiry" placeholder="MM/DD" required maxlength="5" onkeyup="
+                  var v = this.value;
+
+   "> 
+                <label for="">cvv</label>
+                <input type="text" class="cvv" required maxlength="3" required >
+            </div>
+            
+
+            <button>BUY NOW</button>
+
+        </form>
+       
+        <img src="photos/cridit-removebg-preview.png" alt="credit">
+    
+
+    </div>
+    <script src="buy.js"></script>
+</body>
+</html>
